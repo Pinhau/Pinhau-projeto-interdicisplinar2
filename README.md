@@ -290,5 +290,140 @@ c. Resultados da Entrevista
 Usuários indicaram necessidade de sistema simples, rápido e intuitivo.
 d. Termo de Consentimento
 Aplicável caso haja coleta de dados formal para extensão.
-11. Pasta Extensão
+
+6. Versionamento (Git)
+O desenvolvimento do projeto PinhAu utiliza controle de versionamento por meio do sistema Git, com hospedagem do repositório na plataforma GitHub. O uso do versionamento permite registrar todas as alterações realizadas no código-fonte ao longo do desenvolvimento, possibilitando acompanhar a evolução do projeto durante as sprints.
+O versionamento também garante maior organização, rastreabilidade das modificações e segurança no desenvolvimento, permitindo identificar quando e por quem cada alteração foi realizada.
+
+6.1 Organização dos Commits
+Os commits foram realizados de forma incremental, acompanhando a evolução das sprints definidas no planejamento do projeto.
+Sprint 1 – Estrutura e Autenticação
+Principais commits realizados:
+Organização inicial da estrutura de pastas do projeto
+
+
+Criação das tabelas principais do banco de dados (usuarios e cao)
+
+
+Implementação da conexão centralizada com o banco de dados
+
+
+Criação da tela de login do sistema
+
+
+Implementação do processamento de login com uso de sessões
+
+
+Proteção das páginas restritas por meio de controle de sessão
+
+
+Implementação da funcionalidade de logout
+
+
+Testes de autenticação e redirecionamento de usuários
+
+
+Sprint 2 – Interface e Usabilidade
+Principais commits realizados:
+Padronização do cabeçalho e rodapé do sistema
+
+
+Criação de arquivo de estilos global (CSS)
+
+
+Melhoria visual da tela de login
+
+
+Ajuste de botões e navegação para maior clareza
+
+
+Melhorias de layout visando facilitar o uso por usuários iniciantes
+
+
+Ajustes de responsividade para acesso em dispositivos móveis
+
+
+Sprint 3 – Integração e Persistência
+Principais commits realizados:
+Implementação da inserção de cães vinculados ao tutor
+
+
+Criação da listagem pública de cães disponíveis para adoção
+
+
+Implementação da listagem de cães no perfil do tutor
+
+
+Implementação da funcionalidade de remoção de cães
+
+
+Implementação da funcionalidade de atualização de dados dos cães
+
+
+Validação de segurança nas operações de banco de dados
+
+
+Testes de persistência e funcionamento completo do CRUD
+
+
+6.2 Benefícios do Versionamento no Projeto
+A utilização do Git trouxe diversos benefícios para o desenvolvimento do projeto, tais como:
+Registro histórico de todas as alterações realizadas
+
+
+Organização do desenvolvimento por etapas (sprints)
+
+
+Facilidade de identificação de erros e correções
+
+
+Controle da evolução do sistema ao longo do tempo
+
+
+Possibilidade de colaboração e acompanhamento do progresso do projeto
+
+
+6.3 Repositório do Projeto
+O código-fonte do projeto PinhAu está hospedado em um repositório público na plataforma GitHub, permitindo o controle de versões do sistema e o acompanhamento da evolução do desenvolvimento ao longo das sprints. O repositório contém todos os arquivos necessários para execução do sistema, incluindo código-fonte, estilos, scripts e documentação do projeto.
+Link do Repositório
+GitHub:
+https://github.com/Pinhau/Interdisciplinar_documenta-o
+
+Link do Kanban
+
+Trello:
+
+https://trello.com/b/JMCkNwW3/pinhau-roadmap-e-sprint-1
+
+
+
+Estrutura do Repositório
+O projeto está organizado em uma estrutura de pastas que separa os diferentes componentes do sistema, facilitando a manutenção e o entendimento do código.
+Exemplo de organização do repositório:
+pinhau/
+│
+├── app/
+│   └── config/
+│       └── conexao.php
+│
+├── autenticacao/
+│   ├── login.php
+│   ├── logout.php
+│   ├── processamento_login.php
+│   └── processamento_cadastro.php
+│
+├── telas/
+│   ├── perfil_tutor.php
+│   ├── inserir_cao.php
+│   └── alterar_cao.php
+│
+├── estilos/
+│   └── global.css
+│
+├── js/
+│
+├── index.php
+└── README.md
+
+12. Pasta Extensão
 Contempla documentação de ações futuras de extensão e aplicação prática do sistema na comunidade.
